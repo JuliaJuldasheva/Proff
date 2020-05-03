@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox  xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="ru.q1w2e3.chat.client.Controller">
+    <HBox fx:id="loginBox">
+        <TextField fx:id="loginField" promptText="Логин" HBox.hgrow="ALWAYS">
+            <font>
+                <Font name="System" size="16.0"/>
+            </font>
+        </TextField>
+        <PasswordField fx:id="passwordField" promptText="Пароль" HBox.hgrow="ALWAYS" onAction="#tryToAuth">
+            <font>
+                <Font name="System" size="16.0"/>
+            </font>
+        </PasswordField>
+        <Button HBox.hgrow="ALWAYS" text="Войти" onAction="#tryToAuth"/>
+    </HBox>
+
+    <HBox VBox.vgrow="ALWAYS">
+        <TextArea fx:id="mainArea" editable="false" HBox.hgrow="ALWAYS">
+            <font>
+                <Font name="System" size="16.0"/>
+            </font>
+        </TextArea>
+        <ListView fx:id="clientsList" maxWidth="200" minWidth="200"/>
+    </HBox>
+    <TextField fx:id="msgField" onAction="#sendMsg" promptText="Введите сообщение..." minWidth="300">
+        <font>
+            <Font name="System" size="16.0"/>
+        </font>
+    </TextField>
+
+</VBox>
