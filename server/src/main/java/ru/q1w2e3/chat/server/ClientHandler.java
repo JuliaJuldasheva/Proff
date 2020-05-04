@@ -13,6 +13,7 @@ public class ClientHandler {
     private DataOutputStream out;
     private String nickname;
 
+
     public String getNickname() {
         return nickname;
     }
@@ -30,13 +31,14 @@ public class ClientHandler {
                     if (msg.startsWith("/auth ")) {
                         String[] tokens = msg.split(" ", 3);
                         String nickFromAuthManager = server.getAuthManager().getNicknameByLoginPassword(tokens[1], tokens[2]);
+                        String login = tokens[1];
                         if (nickFromAuthManager != null) {
                             if (server.isNickBusy(nickFromAuthManager)) {
                                 sendMsg("Такой пользователь уже \n зарегистрирован в чате");
                                 continue;
                             }
                             nickname = nickFromAuthManager;
-                            sendMsg("/auth_ok " + nickname);
+                            sendMsg("/auth_ok " + nickname + " " + login);
                             server.subscribe(this);
                             break;
                         } else {

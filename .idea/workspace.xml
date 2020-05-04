@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b38ed5d3-76fe-48b4-a2d0-12d42cd7a132" name="Default Changelist" comment="" />
+    <list default="true" id="b38ed5d3-76fe-48b4-a2d0-12d42cd7a132" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/ru/q1w2e3/chat/client/HistoryManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/ru/q1w2e3/chat/client/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/ru/q1w2e3/chat/client/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/ru/q1w2e3/chat/client/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/ru/q1w2e3/chat/client/Controller$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/ru/q1w2e3/chat/client/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/ru/q1w2e3/chat/client/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/ru/q1w2e3/chat/server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/ru/q1w2e3/chat/server/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/ru/q1w2e3/chat/server/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/ru/q1w2e3/chat/server/ClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.db" beforeDir="false" afterPath="$PROJECT_DIR$/users.db" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +29,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -24,9 +41,13 @@
   </component>
   <component name="ProjectId" id="1aDolzqDqtGPhAvoK4olbhX8nJQ" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/HTML_CSS/lesson_1" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.q1w2e3.chat.server" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\admin\IdeaProjects\six_month_chat\client\src\main\resources" />
       <recent name="C:\Users\admin\IdeaProjects\six_month_chat\client\src\main\java\ru\q1w2e3\chat\client" />
@@ -44,7 +65,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainApp">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.q1w2e3.chat.client.Main" />
       <module name="client" />
@@ -65,7 +86,7 @@
       <module name="server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.q1w2e3.chat.server.*" />
+          <option name="PATTERN" value="ru.q1w2e3.chat.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,5 +117,16 @@
       <updated>1586279680642</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

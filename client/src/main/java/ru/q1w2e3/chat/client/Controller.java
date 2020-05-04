@@ -35,6 +35,9 @@ public class Controller implements Initializable {
     private Network network;
     private boolean authenticated;
     private String nickname;
+    private String login;
+    private HistoryManager history;
+
 
     public void setAuthenticated(boolean authenticated) {
         this.authenticated = authenticated;
@@ -74,11 +77,15 @@ public class Controller implements Initializable {
                         String msg = network.readMsg();
                         if (msg.startsWith("/auth_ok ")) {
                             nickname = msg.split(" ")[1];
+                            login = msg.split(" ")[2];
                             mainArea.appendText("Вы зашли в чат под ником: " + nickname + "\n");
+                            history = new HistoryManager(login);
+                            mainArea.appendText(history.readLastLines());
                             setAuthenticated(true);
                             break;
                         }
                         mainArea.appendText(msg + "\n");
+                        history.writeHistory(msg);
                     }
                     while (true) {
                         String msg = network.readMsg();
@@ -105,6 +112,7 @@ public class Controller implements Initializable {
                             }
                         } else {
                             mainArea.appendText(msg + "\n");
+                            history.writeHistory(msg);
                         }
                     }
                 } catch (IOException e) {
@@ -128,9 +136,10 @@ public class Controller implements Initializable {
     }
 
     public void sendMsg(ActionEvent actionEvent) {
-
         try {
-            network.sendMsg(msgField.getText());
+            String msg = msgField.getText();
+            network.sendMsg(msg);
+            //history.writeHistory(msg);
             msgField.clear();
             msgField.requestFocus();
         } catch (IOException e) {
